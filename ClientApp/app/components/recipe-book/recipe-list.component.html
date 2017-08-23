@@ -1,0 +1,29 @@
+﻿<div class="row">
+    <div class="col-xs-12">
+        <a class="btn btn-success" (click)="add()">New Recipe</a>
+    </div>
+</div>
+        <table>
+            <tr *ngFor="let r of recipes">
+                <td>
+                    <a class="list-group-item clearfix" routerLinkActive="active">
+                        <div class="pull-left">
+                            <h4 class="list-group-item-heading">{{r.name}}</h4>
+                            <p class="list-group-item-text">{{r.description}}</p>
+
+                        </div>
+                        <span class="pull-right">
+                            <img class="img-responsive" src="/images/vegan.jpeg" style="max-height:50px" />
+                        </span>
+
+                        <span class="glyphicon glyphicon-heart"></span>
+                        <span class="glyphicon glyphicon-heart "></span>
+                        <span class="glyphicon glyphicon-heart "></span>
+                        <span class="glyphicon glyphicon-heart-empty "></span>
+                        <span class="glyphicon glyphicon-heart-empty"></span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+

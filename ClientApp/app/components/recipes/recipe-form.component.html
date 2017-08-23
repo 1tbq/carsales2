@@ -1,0 +1,18 @@
+﻿<h2>Create Recipe</h2>
+<form>
+        <div class="form-group">
+        <label for="recipe">Recipe</label>
+        <select id="recipe" class="form-control">
+            <option *ngFor="let r of recipes" value="{{r.id}}">{{r.name}}</option>
+
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="ingredient">Ingredients</label>
+        <select id="recipe" class="form-control"></select>
+    </div>
+
+    <button type="submit" class="btn btn-default">Save</button>
+
+</form>
